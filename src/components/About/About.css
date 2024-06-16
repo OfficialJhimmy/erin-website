@@ -1,0 +1,70 @@
+.abouterin__container {
+  background: #323232a3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+  padding: 75px 50px;
+  border-radius: 19px;
+  margin: 0 90px;
+}
+
+.abouterin__container img {
+  width: 85px;
+}
+
+/* TYPOGRAPHY */
+.abouterin__container h2 {
+  font-family: "Euclid Circular A Light";
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.abouterin__container p {
+  font-family: "circularstd";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 43px;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 680px) {
+  .abouterin__container {
+    gap: 50px;
+    padding: 26px 15px;
+    margin: 0 10px;
+  }
+
+  .abouterin__container img {
+    width: 85px;
+  }
+
+  /* TYPOGRAPHY */
+  .abouterin__container h2 {
+    font-size: 22px;
+  }
+
+  .abouterin__container p {
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 681px) {
+    .abouterin__container {
+        gap: 50px;
+        padding: 75px 40px;
+        margin: 0 40px;
+      }
+      
+      /* TYPOGRAPHY */
+      .abouterin__container h2 {
+        font-size: 35px;
+      }
+      
+      .abouterin__container p {
+        font-size: 20px;
+      }
+}

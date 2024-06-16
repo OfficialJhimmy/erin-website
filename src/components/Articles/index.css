@@ -1,0 +1,237 @@
+.articles__container {
+  margin: 150px 90px 100px 90px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.articles__container h2 {
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-family: "Euclid Circular A Regular";
+}
+
+.ant-tabs-nav::before {
+  position: absolute;
+  right: 0;
+  left: 0;
+  border-bottom: none !important;
+  content: "";
+}
+
+.ant-tabs-nav-wrap {
+  margin: 30px 0;
+}
+
+.ant-tabs-nav-list {
+  align-items: center !important;
+}
+
+.ant-tabs-tab {
+  color: #ffffff !important;
+  transition: all 0.3s ease 0s !important;
+  font-family: "circularstd" !important;
+  font-size: 16px !important;
+}
+
+.ant-tabs-tab-active {
+  font-family: "circularstd" !important;
+  font-size: 17px !important;
+  color: rgb(232, 232, 232) !important;
+  background: #343a40 !important;
+  padding: 5px 22px !important;
+  font-weight: 400 !important;
+  border-radius: 6px !important;
+}
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: rgb(232, 232, 232) !important;
+}
+
+.ant-tabs-ink-bar {
+  display: none;
+}
+
+.articles__container--featured {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.article__box {
+  border-top: 1px solid #464646;
+  padding: 44px 20px 32px 0;
+}
+
+.article__box:nth-child(odd) {
+  border-right: 1px solid #464646;
+}
+
+.article__box:nth-child(even) {
+  padding-left: 36px;
+}
+
+.article__box--cover {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin: 15px 0;
+}
+
+/* TYPOGRAPHY */
+.article__box h3 {
+  color: #ffffff;
+  /* text-transform: uppercase; */
+  font-family: "Euclid Circular A Regular";
+  letter-spacing: 0.5px;
+  font-size: 30px;
+}
+
+.article__box--tags span:not(:last-child) {
+  margin-right: 10px;
+}
+
+.article__box--cover p,
+.article__box--tags span {
+  /* background: #ff8906; */
+  /* background: #fbf5e4;
+  border-radius: 5px; */
+  font-weight: 500;
+  font-size: 15px;
+  font-family: "Euclid Circular A Regular";
+  transition: ease-in-out 1s;
+  color: #464646;
+}
+
+.article__box--cover p {
+  padding: 5px 7px;
+  text-transform: uppercase;
+}
+
+.article__box--tags span {
+  padding: 9px 7px;
+}
+
+.article__box a {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Euclid Circular A Regular";
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  transition: 0.5s ease-in-out;
+}
+
+.article__box a:hover {
+  color: #ff8906;
+  text-decoration: underline;
+}
+
+@media (max-width: 680px) {
+  .articles__container {
+    margin: 90px 20px 100px 20px;
+  }
+
+  .articles__container h2 {
+    font-size: 25px;
+  }
+
+  .ant-tabs-nav-wrap {
+    margin: 20px 0;
+  }
+
+  .ant-tabs-nav-list {
+    align-items: center !important;
+    overflow: scroll !important;
+  }
+
+  .ant-tabs-tab {
+    font-size: 14px !important;
+  }
+
+  .ant-tabs .ant-tabs-tab + .ant-tabs-tab {
+    margin: 0 0 0 20px;
+  }
+
+  .ant-tabs-tab-active {
+    font-size: 15px !important;
+    padding: 5px 17px !important;
+  }
+
+  .articles__container--featured {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .article__box {
+    padding: 20px 0;
+  }
+
+  .article__box:nth-child(odd) {
+    border-right: none;
+  }
+
+  .article__box:nth-child(even) {
+    padding-left: 0px;
+  }
+
+  .article__box--cover {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 15px 0;
+  }
+
+  /* TYPOGRAPHY */
+  .article__box h3 {
+    letter-spacing: 0.3px;
+    font-size: 18px;
+  }
+
+  .article__box--tags span:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .article__box a {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 681px) {
+  .articles__container {
+    margin: 150px 30px 100px 30px;
+  }
+
+  .articles__container h2 {
+    font-size: 35px;
+  }
+
+  .ant-tabs-nav-wrap {
+    margin: 25px 0;
+  }
+
+  .ant-tabs-tab {
+    font-size: 15px !important;
+  }
+
+  .ant-tabs .ant-tabs-tab + .ant-tabs-tab {
+    margin: 0 0 0 25px;
+  }
+
+  .ant-tabs-tab-active {
+    font-size: 18px !important;
+  }
+
+  .article__box {
+    border-top: 1px solid #464646;
+    padding: 35px 0px 32px 0;
+  }
+
+  .article__box:nth-child(even) {
+    padding-left: 20px;
+  }
+
+  /* TYPOGRAPHY */
+  .article__box h3 {
+    font-size: 25px;
+  }
+}
